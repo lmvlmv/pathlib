@@ -614,11 +614,6 @@ func (p *Path) Glob(pattern string) ([]*Path, error) {
 	return Glob(p.Fs(), p.Join(pattern).String())
 }
 
-// // Glob returns all matches of pattern relative to this object's path.
-// func (p *Path) Glob(pattern string) ([]*Path, error) {
-// 	return Glob(p.Fs(), p.Join(pattern).String())
-// }
-
 // Clean returns a new object that is a lexically-cleaned
 // version of Path.
 func (p *Path) Clean() *Path {
